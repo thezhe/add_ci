@@ -1,6 +1,11 @@
 # templatelists
 
-`CMakeLists.txt` used as a [CMake module](https://cmake.org/cmake/help/latest/manual/cmake-language.7.html#modules)
+CMake module that defines a `ci` target
+
+## Features
+
+- Builds and tests the `all` target
+- Installs artifacts to `build/artifacts`
 
 ## Versioning
 
