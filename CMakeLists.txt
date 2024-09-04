@@ -6,8 +6,10 @@ project("thezhe/add_ci")
 Add a `ci` utility target that builds, tests, and packages `all`
 Pre:
 - Called after all other configuration commands
-Post:
-- Packages in `${CMAKE_CURRENT_BINARY_DIR}/artifacts`
+Errors:
+- Build, test, or package step fails
+Output:
+- Artifacts in `${CMAKE_CURRENT_BINARY_DIR}/artifacts`
 ]]
 function(thezhe_add_ci)
     ProcessorCount(ci_processor_count)
